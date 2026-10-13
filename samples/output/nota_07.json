@@ -1,0 +1,41 @@
+{
+  "merchant_name": "UD BANGUNAN JAYA ABADI",
+  "date_printed": "08/10/2026",
+  "receipt_date": "2026-10-08",
+  "currency": "IDR",
+  "items": [
+    {
+      "name": "Cat Tembok 5kg",
+      "quantity": "2",
+      "unit_price": "145000",
+      "line_total": "290000"
+    },
+    {
+      "name": "Paku 5cm 1kg",
+      "quantity": "4",
+      "unit_price": "24000",
+      "line_total": "96000"
+    },
+    {
+      "name": "Semen 40kg",
+      "quantity": "2",
+      "unit_price": "62000",
+      "line_total": "124000"
+    },
+    {
+      "name": "Kuas 3 inch",
+      "quantity": "3",
+      "unit_price": "15000",
+      "line_total": "45000"
+    }
+  ],
+  "subtotal": "555000",
+  "tax": null,
+  "total": "555000",
+  "confidence": 1.0,
+  "notes": null,
+  "_meta": {
+    "model": "gemini-3.5-flash-lite",
+    "issues": []
+  }
+}

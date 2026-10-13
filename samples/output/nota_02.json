@@ -1,0 +1,41 @@
+{
+  "merchant_name": "WARUNG MAKAN BU KADEK",
+  "date_printed": "07/10/2026",
+  "receipt_date": "2026-10-07",
+  "currency": "IDR",
+  "items": [
+    {
+      "name": "Nasi Campur Ayam",
+      "quantity": "2",
+      "unit_price": "25000",
+      "line_total": "50000"
+    },
+    {
+      "name": "Sate Lilit",
+      "quantity": "1",
+      "unit_price": "20000",
+      "line_total": "20000"
+    },
+    {
+      "name": "Es Jeruk",
+      "quantity": "2",
+      "unit_price": "8000",
+      "line_total": "16000"
+    },
+    {
+      "name": "Kerupuk",
+      "quantity": "3",
+      "unit_price": "2000",
+      "line_total": "6000"
+    }
+  ],
+  "subtotal": "92000",
+  "tax": null,
+  "total": "92000",
+  "confidence": 1.0,
+  "notes": null,
+  "_meta": {
+    "model": "gemini-3.5-flash-lite",
+    "issues": []
+  }
+}

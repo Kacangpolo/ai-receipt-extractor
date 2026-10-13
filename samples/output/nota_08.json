@@ -1,0 +1,29 @@
+{
+  "merchant_name": "APOTEK SEHAT SANUR",
+  "date_printed": "01/10/2026",
+  "receipt_date": "2026-10-01",
+  "currency": "IDR",
+  "items": [
+    {
+      "name": "Plester Luka",
+      "quantity": "2",
+      "unit_price": "12000",
+      "line_total": "24000"
+    },
+    {
+      "name": "Vitamin C 1000",
+      "quantity": "3",
+      "unit_price": "45000",
+      "line_total": "135000"
+    }
+  ],
+  "subtotal": "159000",
+  "tax": null,
+  "total": "159000",
+  "confidence": 1.0,
+  "notes": null,
+  "_meta": {
+    "model": "gemini-3.5-flash-lite",
+    "issues": []
+  }
+}

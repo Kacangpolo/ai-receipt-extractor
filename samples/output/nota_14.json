@@ -1,0 +1,47 @@
+{
+  "merchant_name": "TOKO SARI MURNI",
+  "date_printed": "03/10/2026",
+  "receipt_date": "2026-10-03",
+  "currency": "IDR",
+  "items": [
+    {
+      "name": "Teh Pucuk 350ml",
+      "quantity": "1",
+      "unit_price": "4500",
+      "line_total": "4500"
+    },
+    {
+      "name": "Telur Ayam 1kg",
+      "quantity": "3",
+      "unit_price": "29000",
+      "line_total": "87000"
+    },
+    {
+      "name": "Roti Tawar Sari",
+      "quantity": "1",
+      "unit_price": "17500",
+      "line_total": "17500"
+    },
+    {
+      "name": "Aqua 600ml",
+      "quantity": "1",
+      "unit_price": "4000",
+      "line_total": "4000"
+    },
+    {
+      "name": "Minyak Goreng 1L",
+      "quantity": "2",
+      "unit_price": "19500",
+      "line_total": "39000"
+    }
+  ],
+  "subtotal": "152000",
+  "tax": "16720",
+  "total": "168720",
+  "confidence": 1.0,
+  "notes": null,
+  "_meta": {
+    "model": "gemini-3.5-flash-lite",
+    "issues": []
+  }
+}

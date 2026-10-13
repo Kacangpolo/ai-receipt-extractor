@@ -1,0 +1,41 @@
+{
+  "merchant_name": "KOPI SENJA RENON",
+  "date_printed": "07/10/2026",
+  "receipt_date": "2026-10-07",
+  "currency": "IDR",
+  "items": [
+    {
+      "name": "Croissant Butter",
+      "quantity": "4",
+      "unit_price": "32000",
+      "line_total": "128000"
+    },
+    {
+      "name": "Americano Ice",
+      "quantity": "3",
+      "unit_price": "25000",
+      "line_total": "75000"
+    },
+    {
+      "name": "Pisang Goreng Keju",
+      "quantity": "4",
+      "unit_price": "22000",
+      "line_total": "88000"
+    },
+    {
+      "name": "Kopi Susu Gula Aren",
+      "quantity": "3",
+      "unit_price": "28000",
+      "line_total": "84000"
+    }
+  ],
+  "subtotal": "375000",
+  "tax": "41250",
+  "total": "416250",
+  "confidence": 0.99,
+  "notes": null,
+  "_meta": {
+    "model": "gemini-3.8-flash",
+    "issues": []
+  }
+}

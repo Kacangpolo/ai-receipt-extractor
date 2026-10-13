@@ -1,0 +1,29 @@
+{
+  "merchant_name": "WARUNG MAKAN BU KADEK",
+  "date_printed": "11/10/2026",
+  "receipt_date": "2026-10-11",
+  "currency": "IDR",
+  "items": [
+    {
+      "name": "Es Teh",
+      "quantity": "4",
+      "unit_price": "5000",
+      "line_total": "20000"
+    },
+    {
+      "name": "Sate Lilit",
+      "quantity": "4",
+      "unit_price": "20000",
+      "line_total": "80000"
+    }
+  ],
+  "subtotal": "100000",
+  "tax": null,
+  "total": "100000",
+  "confidence": 1.0,
+  "notes": null,
+  "_meta": {
+    "model": "gemini-3.8-flash",
+    "issues": []
+  }
+}

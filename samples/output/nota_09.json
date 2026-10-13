@@ -1,0 +1,29 @@
+{
+  "merchant_name": "TOKO SARI MURNI",
+  "date_printed": "08/10/2026",
+  "receipt_date": "2026-10-08",
+  "currency": "IDR",
+  "items": [
+    {
+      "name": "Roti Tawar Sari",
+      "quantity": "4",
+      "unit_price": "17500",
+      "line_total": "70000"
+    },
+    {
+      "name": "Teh Pucuk 350ml",
+      "quantity": "1",
+      "unit_price": "4500",
+      "line_total": "4500"
+    }
+  ],
+  "subtotal": "74500",
+  "tax": "8195",
+  "total": "82695",
+  "confidence": 1.0,
+  "notes": null,
+  "_meta": {
+    "model": "gemini-3.5-flash-lite",
+    "issues": []
+  }
+}

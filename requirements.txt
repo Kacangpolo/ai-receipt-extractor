@@ -1,0 +1,9 @@
+google-genai
+anthropic
+pydantic>=2.7
+psycopg[binary]>=3.2
+python-dotenv>=1.0
+pandas>=2.0
+openpyxl>=3.1
+streamlit>=1.40
+pytest>=8.0

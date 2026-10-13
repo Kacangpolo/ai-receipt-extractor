@@ -1,0 +1,29 @@
+{
+  "merchant_name": "TOKO SARI MURNI",
+  "date_printed": "04/10/2026",
+  "receipt_date": "2026-10-04",
+  "currency": "IDR",
+  "items": [
+    {
+      "name": "Aqua 600ml",
+      "quantity": "3",
+      "unit_price": "4000",
+      "line_total": "12000"
+    },
+    {
+      "name": "Minyak Goreng 1L",
+      "quantity": "2",
+      "unit_price": "19500",
+      "line_total": "39000"
+    }
+  ],
+  "subtotal": "51000",
+  "tax": "5610",
+  "total": "56610",
+  "confidence": 1.0,
+  "notes": null,
+  "_meta": {
+    "model": "gemini-3.5-flash-lite",
+    "issues": []
+  }
+}
