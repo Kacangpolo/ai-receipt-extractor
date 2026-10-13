@@ -2,7 +2,7 @@
 
 Turn photos of paper sales receipts (*nota*) into clean, queryable data — no manual typing.
 
-**Live demo:** _link coming soon_ (read-only, 15 synthetic receipts)
+**Live demo:** https://ai-receipt-extractor-2jmg52mqgfhowmoux8uugm.streamlit.app/ (read-only, 15 synthetic receipts)
 
 Small businesses in Indonesia still run on paper receipts. Someone re-types them into Excel at the end of the day, which is slow and error-prone. This pipeline sends each photo to a vision LLM, gets back **validated structured data**, checks it, and loads it into PostgreSQL ready for dashboards.
 
@@ -25,17 +25,21 @@ Small businesses in Indonesia still run on paper receipts. Someone re-types them
 
 ## Results
 
-First run on 3 synthetic receipts (`samples/nota_01-03`), model `gemini-3.5-flash-lite`:
+15 synthetic receipts (`samples/`), primary model `gemini-3.5-flash-lite`, second opinion `gemini-3.8-flash`:
 
-| Metric | v1 | v2 (date fix) |
-|---|---|---|
-| Merchant name accuracy | 100% | 100% |
-| Date accuracy | 66.7% | **100%** |
-| Total amount accuracy | 100% | 100% |
-| All fields correct | 66.7% | **100%** |
-| Avg. tokens per receipt | ~1,550 | ~1,560 |
+| Metric | v1 | v2 (date fix) | v3 (checks + second opinion) |
+|---|---|---|---|
+| Receipts evaluated | 3 | 14 of 15 | **15 of 15** |
+| Merchant name accuracy | 100% | 100% | 100% |
+| Date accuracy | 66.7% | 100% | 100% |
+| Total amount accuracy | 100% | 100% | 100% |
+| All fields correct | 66.7% | 100% | **100%** |
+| Needed a second opinion | – | – | 2 of 15 |
+| Left for human review | – | – | 0 |
 
-_Next: evaluate on 30 real receipts with varied quality (crumpled, handwritten, low light), then compare Gemini vs Claude on accuracy, speed and cost._
+The two receipts sent for a second opinion failed for different reasons: one came back with no merchant, no total and an unpriced item; the other listed its items twice (items 750,000 vs printed subtotal 375,000). Both were caught by the consistency checks and fixed by the stronger model.
+
+_Next: evaluate on 30 real receipts with varied quality (crumpled, handwritten, low light), then compare models on accuracy, speed and cost._
 
 ## Lessons learned
 
@@ -120,9 +124,9 @@ tests/             offline tests with a fake LLM client
 ## Roadmap
 
 - [x] Extraction pipeline with validation and PostgreSQL storage
-- [x] Accuracy evaluation on synthetic receipts
+- [x] Accuracy evaluation on synthetic receipts (15/15)
+- [x] Consistency checks + second opinion from a stronger model
 - [ ] Accuracy evaluation on 30 real receipts
 - [x] Streamlit dashboard with upload, review queue and Excel export
 - [ ] Dashboard on PostgreSQL (Metabase / Looker Studio)
 - [ ] Gemini vs Claude accuracy/cost comparison
-- [ ] Retry low-confidence receipts with a stronger model
